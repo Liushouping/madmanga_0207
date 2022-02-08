@@ -350,7 +350,6 @@
   }
 }
 
-.scrollbar::scrollbar {
+.scrollbar::-webkit-scrollbar {
     display:none;
 }
-
