@@ -159,6 +159,42 @@
   animation-iteration-count: infinite;
   animation-direction: reverse-alternate;
 }
+.wrapper h1.glitch3 {
+  color: white;
+  position: relative;
+  padding: 0px 30px;
+}
+.wrapper h1.glitch3::before, .wrapper h1.glitch3::after {
+  padding: 0px 30px;
+  color: white;
+  content: "WhoWeAre";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  top: 0;
+}
+.wrapper h1.glitch3::before {
+  left: 3px;
+  text-shadow: -2px 0 #FF00FF;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+.wrapper h1.glitch3::after {
+  left: -3px;
+  text-shadow: -2px 0 #00FFFF;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
 
 @keyframes glitch-animation-1 {
   0% {
