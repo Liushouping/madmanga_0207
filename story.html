@@ -52,11 +52,11 @@
 		</button>
 	</div>
 	<section 
-	class="relative w-screen h-screen bg-black">
+	class="relative w-screen h-full md:h-screen bg-black flex flex-col justify-center items-center">
 		<div 
 		class="absolute inset-0 flex justify-center items-center">
 			<video 
-			class="" 
+			class="max-w-none z-0" 
 			src="./video/orgin.mp4" 
 			type="video/mp4" autoplay muted loop="" playsinline="" webkit-playsinline="" x5-playsinline=""></video>
 		</div>
@@ -132,7 +132,7 @@
 		</section>
 
 		<nav 
-		class="max-w-7xl w-full mx-auto flex flex-row justify-center sm:justify-start lg:justify-between items-center pt-6">
+		class="absolute top-5 max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-start lg:justify-between items-center px-10">
 			<img src="./image/LOGO.svg" class="w-24 h-24 z-10">
 			<div class="hidden md:flex flex-row justify-end items-center space-x-10">
 				<ul 
@@ -180,7 +180,7 @@
 			</div>
 
 			<div 
-			class="flex sm:hidden absolute top-5 right-5">
+			class="flex md:hidden absolute top-5 right-5">
 				<button 
 				type="button" 
 				@click="isOpen = true">
@@ -192,8 +192,10 @@
 		</nav>
 
 		<div 
-		class="absolute flex flex-col top-0 lg:top-28 xl:top-0 justify-center inset-0 max-w-[620px] w-full mx-auto px-10 pt-0">
-			<img src="./image/orgin.png" class="w-[120px] pb-2 md:pb-6">
+		class="relative flex flex-col justify-center max-w-[620px] w-full mx-auto py-40 md:py-20 px-10 z-10">
+			<div class="wrapper">
+				<h1 class="glitch text-left text-[32px] -ml-8 font-MajestyRegular">origin</h1>
+			</div>
 			<p class="text-white text-[16px] leading-loose tracking-[1.25px] font-RobotoBold pb-1 md:pb-3">
 				A massive black hole of unknown origin suddenly appeared at the edge of the solar system and seemed to attract only and all manga-related energy available on Earth.
 			</p>

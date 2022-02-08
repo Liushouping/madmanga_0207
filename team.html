@@ -35,7 +35,7 @@
 </head>
 <body x-data="{ isOpen: false }">
 	<section 
-	class="relative w-screen h-full md:h-screen bg-cover bg-center" 
+	class="relative w-screen h-full lg:h-screen bg-cover bg-center" 
 	style="background-image: url(./image/team.png);">
 
 		<section 
@@ -109,7 +109,7 @@
 		</section>
 
 		<nav 
-		class="max-w-7xl w-full mx-auto flex flex-row justify-center sm:justify-start lg:justify-between items-center pt-6">
+		class="max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-start lg:justify-between items-center pt-6">
 			<img src="./image/LOGO.svg" class="w-24 h-24 z-10">
 			<div class="hidden md:flex flex-row justify-end items-center space-x-10">
 				<ul 
@@ -157,7 +157,7 @@
 			</div>
 
 			<div 
-			class="flex sm:hidden absolute top-5 right-5">
+			class="flex md:hidden absolute top-5 right-5">
 				<button 
 				type="button" 
 				@click="isOpen = true">
@@ -275,7 +275,7 @@
 								<h3 
 								class="text-white text-center font-MajestyRegular pb-2">Annabelle</h3>
 								<p 
-								class="text-white font-RobotoLight text-center">public<br>relation</p>
+								class="text-white font-RobotoLight text-center">Public<br>Relation</p>
 							</div>
 		        </div>
 		        <div class="swiper-slide">
@@ -308,7 +308,7 @@
 								<h3 
 								class="text-white text-center font-MajestyRegular pb-2">Beryl</h3>
 								<p 
-								class="text-white font-RobotoLight text-center">special effects<br>artist</p>
+								class="text-white font-RobotoLight text-center">Special Effects<br>Artist</p>
 							</div>
 		        </div>
 		        <div class="swiper-slide">
@@ -347,7 +347,7 @@
 		      </div>
 		    </div>
 			</div>
-			<div class="w-full flex flex-col md:flex-row pt-6 pb-12 justify-center items-center">
+			<div class="w-full flex flex-col md:flex-row py-10 md:pt-2 justify-center items-center">
 				<div class="w-1/4 flex justify-center items-center">
 					<h3 class="text-white text-[36px] lg:text-[32px] font-MajestyRegular">WhoWeAre</h3>
 				</div>
@@ -358,7 +358,7 @@
 		</div>
 
 		<footer 
-		class="fixed bottom-0 w-screen bg-black h-10 flex items-center z-10">
+		class="absolute bottom-0 w-screen bg-black h-10 flex items-center z-10">
 			<div 
 			class="max-w-7xl w-full mx-auto flex flex-row justify-between md:justify-end items-center px-2 md:px-0">
 				<span 

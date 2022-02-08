@@ -34,7 +34,7 @@
 </head>
 <body x-data="{ isOpen: false }">
 	<section 
-	class="w-screen h-full md:h-screen bg-cover bg-center relative" 
+	class="w-screen h-full md:h-screen bg-cover bg-center relative flex flex-col justify-center" 
 	style="background-image: url(./image/home.png);">
 		<div 
 		class="absolute top-0 left-0 z-10">
@@ -116,7 +116,7 @@
 		</section>
 
 		<nav 
-		class="max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-end items-center  pt-3 md:pt-12 px-2 md:px-0">
+		class="absolute top-10 max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-end items-center px-2 md:px-0">
 			<ul 
 			class="hidden md:flex flex-row space-x-10 mr-14 z-20">
 				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
@@ -161,7 +161,7 @@
 			</ul>
 
 			<div 
-			class="flex md:hidden justify-center items-center">
+			class="flex md:hidden justify-center items-center z-20">
 				<button 
 				type="button" 
 				@click="isOpen = true">
@@ -173,9 +173,9 @@
 		</nav>
 
 		<div 
-		class="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center">
+		class="max-w-7xl w-full mx-auto flex flex-col md:flex-row">
 			<div class="relative w-full md:w-1/2">
-				<img src="./image/madmanga-logo.png" class="w-[360px] md:w-[460px] mx-auto">
+				<img src="./image/madmanga-logo.png" class="w-[360px] md:w-[460px] mx-auto z-10">
 				<h5 
 				class="text-[32px] text-white text-center tracking-[1.25px] font-RobotoBold -mt-14 pb-2">THE LARGEST</h5>
 <!-- 				<h5 
