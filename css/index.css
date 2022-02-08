@@ -52,6 +52,19 @@
       0 0 35px #ff1177;
   }
 }
+@keyframes neon2{
+  0%{filter:drop-shadow(0 0 10px #ff1177) drop-shadow(0 0 20px #ff1177) sepia(20%);opacity:.85}
+  45%{filter:drop-shadow(0 0 20px #ff1177) drop-shadow(0 0 20px #ff1177) sepia(50%);opacity:.85}
+  50%{filter:drop-shadow(0 0 10px #ff1177) drop-shadow(0 0 20px #ff1177) sepia(80%);opacity:1}
+  55%{filter:drop-shadow(0 0 30px #ff1177) drop-shadow(0 0 20px #ff1177) sepia(10%);opacity:.85}to{filter:drop-shadow(0 0 10px #ff1177) drop-shadow(0 0 20px #ff1177);opacity:.8}
+}
+
+@keyframes letter{
+  0%{filter:drop-shadow(0 0 10px #21c4fa) drop-shadow(0 0 20px #21c4fa) sepia(20%);opacity:.85}
+  45%{filter:drop-shadow(0 0 20px #21c4fa) drop-shadow(0 0 20px #21c4fa) sepia(50%);opacity:.85}
+  50%{filter:drop-shadow(0 0 10px #21c4fa) drop-shadow(0 0 20px #21c4fa) sepia(80%);opacity:1}
+  55%{filter:drop-shadow(0 0 30px #21c4fa) drop-shadow(0 0 20px #21c4fa) sepia(10%);opacity:.85}to{filter:drop-shadow(0 0 10px #21c4fa) drop-shadow(0 0 20px #21c4fa);opacity:.8}
+}
 /* */
 .wrapper {
   width: 100%;
@@ -62,8 +75,6 @@
 }
 .wrapper h1.glitch {
   color: white;
-/*  font-family: sans-serif;*/
-/*  font-weight: 800;*/
   position: relative;
   padding: 30px;
 }
