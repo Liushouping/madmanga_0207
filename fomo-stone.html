@@ -6,6 +6,7 @@
   <link rel="icon" href="./image/MM_Favi.png" type="image/png"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <title>FOMO STONE | MadManga</title>
 
   <script>
@@ -20,7 +21,8 @@
 		    },
         extend: {
         	colors: {
-            deepyellow: '#6436C4'
+            deepyellow: '#6436C4',
+            beige: '#dddddd'
 	        }
       	},
       	fontFamily: {
@@ -33,7 +35,16 @@
     	}
   }
   </script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  $('.has-animation').each(function(index) {
+    $(this).delay($(this).data('delay')).queue(function(){
+      $(this).addClass('animate-in');
+    });
+  });
+});
 
+  </script>
 </head>
 <body x-data="{ isOpen: false }">
 	<section 
@@ -174,25 +185,26 @@
 			class="flex flex-row space-x-12 justify-center items-center">
 				<li 
 				class="flex flex-col justify-center items-center">
-					<span class="text-[60px] text-white leading-tight font-AntonRegular">?</span>
-					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular">DAYS</span>
+					<span class="text-[60px] text-white leading-tight font-AntonRegular inline-block has-animation animation-ltr bigger-top" >?</span>
+					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular inline-block has-animation animation-ltr-bt bigger-bottom" >DAYS</span>
 				</li>
 				<li 
 				class="flex flex-col justify-center items-center">
-					<span class="text-[60px] text-white leading-tight font-AntonRegular">?</span>
-					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular">HOURS</span>
+					<span class="text-[60px] text-white leading-tight font-AntonRegular inline-block has-animation animation-ltr bigger-top" >?</span>
+					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular inline-block has-animation animation-ltr-bt bigger-bottom">HOURS</span>
 				</li>
 				<li 
 				class="flex flex-col justify-center items-center">
-					<span class="text-[60px] text-white leading-tight font-AntonRegular">?</span>
-					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular">MINUTES</span>
+					<span class="text-[60px] text-white leading-tight font-AntonRegular inline-block has-animation animation-ltr bigger-top" >?</span>
+					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular inline-block has-animation animation-ltr-bt bigger-bottom">MINUTES</span>
 				</li>
 				<li 
 				class="flex flex-col justify-center items-center">
-					<span class="text-[60px] text-white leading-tight font-AntonRegular">?</span>
-					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular">SECONDS</span>
+					<span class="text-[60px] text-white leading-tight font-AntonRegular inline-block has-animation animation-ltr bigger-top"  >?</span>
+					<span class="text-white text-[14px] lg:text-[16px] font-AntonRegular inline-block has-animation animation-ltr-bt bigger-bottom">SECONDS</span>
 				</li>
 			</ul>
+
 			<img src="./image/fomo-stone-bottom.png" class="w-[420px] mx-auto">
 		</div>
 
@@ -223,6 +235,7 @@
 			</div>
 		</footer>
 	</section>
+
 	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
