@@ -123,11 +123,13 @@
 		</section>
 
 		<nav 
-		class="absolute top-5 max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-start lg:justify-between items-center px-10">
-			<img src="./image/LOGO.svg" class="w-24 h-24 z-10">
+		class="fixed top-5 max-w-7xl w-full mx-auto flex flex-row justify-between md:justify-between lg:justify-around xl:justify-between items-center z-20">
+			<a href="index.html" class="appearance-none">
+				<img src="./image/LOGO.svg" class="w-24 h-24 z-10">
+			</a>
 			<div class="hidden md:flex flex-row justify-end items-center space-x-10 md:px-20 lg:px-0">
 				<ul 
-				class="flex flex-row space-x-10 z-20">
+				class="flex flex-row space-x-10 z-30">
 					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
 						<a href="index.html" class="appearance-none">HOME</a>
 					</li>
@@ -166,7 +168,7 @@
 			</div>
 
 			<div 
-			class="flex md:hidden absolute top-5 right-5">
+			class="flex md:hidden absolute top-5 right-5 z-20">
 				<button 
 				type="button" 
 				@click="isOpen = true">
@@ -179,10 +181,12 @@
 
 		<div 
 		class="relative max-w-5xl w-full mx-auto px-10 z-20">
-			<img src="./image/egg.png" class="w-[260px] mx-auto">
-			<img src="./image/fomo-stone-logo.png" class="w-[260px] mx-auto">
+			<img src="./image/egg.png" class="w-[260px] mx-auto" style="animation: switch 811ms linear 326ms infinite alternate">
+			<div class="wrapper">
+				<h1 class="glitch2 text-left text-[36px] mx-auto font-MajestyRegular">Fomo Stone</h1>
+			</div>
 			<ul 
-			class="flex flex-row space-x-12 justify-center items-center">
+			class="flex flex-row space-x-4 sm:space-x-12 justify-center items-center">
 				<li 
 				class="flex flex-col justify-center items-center">
 					<span class="text-[60px] text-white leading-tight font-AntonRegular inline-block has-animation animation-ltr bigger-top" >?</span>
