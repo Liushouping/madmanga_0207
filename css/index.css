@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* */
+@font-face {
+  font-family: 'Anton Regular';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../font/Anton-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Majesty Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Majesty-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../font/Roboto-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/Roboto-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../font/Roboto-Light.ttf) format("opentype");
+}
+/* */
+@keyframes neon1 {
+  /*0% {
+    text-shadow:
+      0 0 0px #ff1177, 0 0 0px #ff1177, 0 0 0px #ff1177, 0 0 0px #ff1177;
+  }
+  100% {
+    text-shadow:
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 20px #ff1177, 0 0 75px #ff1177;
+  }*/
+  0% {
+/*    text-shadow: 0 0 35px #ff1177;*/
+  }
+  100% {
+/*    text-shadow: 0 0 70px #ff1177;*/
+  }
+}

@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+  <title>team</title>
+
+  <script>
+  tailwind.config = {
+      theme: {
+      	screens: {
+      		'xs': '414px',
+		      'sm': '768px',
+		      'md': '992px',
+		      'lg': '1366px',
+		      'xl': '1920px',
+		    },
+        extend: {
+        	
+      	},
+      	fontFamily: {
+	        AntonRegular: ['Anton Regular'],
+	        MajestyRegular: ['Majesty Regular'],
+	        RobotoBold: ['Roboto Bold'],
+	        RobotoRegular: ['Roboto Regular'],
+	        RobotoLight: ['Roboto Light']
+	      }
+    	}
+  }
+  </script>
+
+</head>
+<body x-data="{ isOpen: false }">
+	<section 
+	class="relative w-screen h-full bg-cover bg-center" 
+	style="background-image: url(./image/team.png);">
+
+		<section 
+		:class="isOpen ? 'fixed top-0 z-50' : 'hidden'" 
+		class="w-screen h-screen bg-gray-900">
+			<div 
+			class="flex justify-center items-center h-screen">
+				<ul 
+				class="space-y-6">
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="index.html" class="appearance-none">
+							HOME
+						</a>
+					</li>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="story.html" class="appearance-none">
+							STORY
+						</a>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="fomo stone.html" class="appearance-none">
+							FOMO STONE
+						</a>
+					</li>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="team.html" class="appearance-none">
+							TEAM
+						</a>
+					</li>
+					<li>
+						<ul class="flex flex-row space-x-4 w-40 justify-center items-center">
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/discord.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/twitter.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/instagram.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/facebook.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div 
+			class="absolute right-5 top-5 z-30">
+					<button 
+					type="button" 
+					@click="isOpen = false">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+			</div>
+			
+		</section>
+
+		<nav 
+		class="max-w-7xl w-full mx-auto flex flex-row justify-center sm:justify-start lg:justify-between items-center pt-6">
+			<img src="./image/LOGO.svg" class="w-24 h-24 z-10">
+			<div class="hidden md:flex flex-row justify-end items-center space-x-10">
+				<ul 
+				class="flex flex-row space-x-10 z-20">
+					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+						<a href="index.html" class="appearance-none">HOME</a>
+					</li>
+					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+						<a href="story.html" class="appearance-none">STORY</a>
+					</li>
+					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+						<a href="fomo-stone.html" class="appearance-none">FOMO STONE</a>
+					</li>
+					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+						<a href="#" class="appearance-none">ROAD MAP</a>
+					</li>
+					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+						<a href="team.html" class="appearance-none">TEAM</a>
+					</li>
+				</ul>
+
+				<ul 
+				class="hidden lg:flex flex-row space-x-10 z-20">
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/discord.svg" class="h-4 w-4 hover:opacity-70">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/twitter.svg" class="h-4 w-4 hover:opacity-70">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/facebook.svg" class="h-4 w-4 hover:opacity-70">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/instagram.svg" class="h-4 w-4 hover:opacity-70">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div 
+			class="flex sm:hidden absolute top-5 right-5">
+				<button 
+				type="button" 
+				@click="isOpen = true">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+		</nav>
+
+		<div 
+		class="max-w-7xl w-full mx-auto flex flex-col justify-center items-center">
+			<div class="w-full">
+				<div 
+				class="swiper mySwiper1 ml-0 md:ml-40">
+		      <div class="swiper-wrapper ml-40">
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">David</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Story</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Jeremy</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Execution</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Metastoke</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Strategy</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Ocean</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Grand Scheme</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Sing</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Scripting</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Mr. Lemon</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Financial</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Gaga</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Marketing<br>Public Relations</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Tommy</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Animation</p>
+							</div>
+		        </div>
+		      </div>
+		    </div>
+		    <div 
+				class="swiper mySwiper2 mr-0 md:mr-40">
+		      <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Annabelle</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">public<br>relation</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Sam</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Project Manager</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Yui</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Visual<br>Designer</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Beryl</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">special effects<br>artist</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Unee</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Artist</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">Moly</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Development</p>
+							</div>
+		        </div>
+		        <div class="swiper-slide">
+		        	<div class="flex justify-center items-center flex-col text-[14px] lg:text-[16px] ">
+								<picture>
+									<img src="./image/egg.png" class="w-[120px]">
+								</picture>
+								<h3 
+								class="text-white text-center font-MajestyRegular pb-2">KaiSaya</h3>
+								<p 
+								class="text-white font-RobotoLight text-center">Community</p>
+							</div>
+		        </div>
+		      </div>
+		    </div>
+			</div>
+			<div class="w-full flex flex-col md:flex-row pt-6 pb-12 justify-center items-center">
+				<div class="w-1/4 flex justify-center items-center">
+					<h3 class="text-white text-[36px] lg:text-[32px] font-MajestyRegular">WhoWeAre</h3>
+				</div>
+				<div class="w-3/4">
+					<p class="text-white leading-loose text-[14px] tracking-[1.25px] font-RobotoRegular">MadManga is an international team, with Silicon Valley venture capitalists as consultants and team members from copyrights, exhibition curation, e-sports, and tech backgrounds. The members have respectively worked closely with Disney, Warner Bros. Studio, Barbie, ONE PIECE, and NARUTO. In addition, tens of contemporary artists will join hands to work on this project.</p>
+				</div>
+			</div>
+		</div>
+
+		<footer 
+		class="fixed bottom-0 w-screen bg-black h-10 flex items-center z-10">
+			<div 
+			class="max-w-7xl w-full mx-auto flex flex-row justify-between md:justify-end items-center px-2 md:px-0">
+				<span 
+				class="text-[12px] lg:text-[14px] font-RobotoRegular text-white">Copyright MadManga all rights reserved 2022</span>
+				<ul 
+				class="flex md:hidden flex-row space-x-4 z-20">
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/discord.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/twitter.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/facebook.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/instagram.svg" class="h-4 w-4">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</section>
+	<script src="./js/swiper@7.4.1.min.js"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<script>
+		const swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 5,
+        loop: true,
+        speed:5000,
+        allowTouchMove: false,
+        freeMode:true,
+        autoplay: {
+          delay: 0,
+	        reverseDirection: false,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 7,
+          },
+        },
+      });
+		const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        loop: true,
+        speed:7000,
+        allowTouchMove: false,
+        freeMode:true,
+        autoplay: {
+          delay: 0,
+	        reverseDirection: true,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 7,
+          },
+        },
+      });
+	</script>
+</body>
+</html>

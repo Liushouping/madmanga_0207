@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <title>index</title>
+
+  <script>
+  tailwind.config = {
+      theme: {
+      	screens: {
+      		'xs': '414px',
+		      'sm': '768px',
+		      'md': '992px',
+		      'lg': '1366px',
+		      'xl': '1920px',
+		    },
+        extend: {
+        	
+      	},
+      	fontFamily: {
+	        AntonRegular: ['Anton Regular'],
+	        MajestyRegular: ['Majesty Regular'],
+	        RobotoBold: ['Roboto Bold'],
+	        RobotoRegular: ['Roboto Regular'],
+	        RobotoLight: ['Roboto Light']
+	      }
+    	}
+  }
+  </script>
+
+</head>
+<body x-data="{ isOpen: false }">
+	<section 
+	class="w-screen h-full md:h-screen bg-cover bg-center relative" 
+	style="background-image: url(./image/home.png);">
+		<div 
+		class="absolute top-0 left-0 z-10">
+			<img src="./image/bg-home-left-top.png" class="w-32">
+		</div>
+		<div 
+		class="absolute top-0 right-0 z-10">
+			<img src="./image/bg-home-right-top.png" class="w-32">
+		</div>
+
+		<section 
+		:class="isOpen ? 'fixed top-0 z-50' : 'hidden'" 
+		class="w-screen h-screen bg-gray-900">
+			<div 
+			class="flex justify-center items-center h-screen">
+				<ul 
+				class="space-y-6">
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="index.html" class="appearance-none">
+							HOME
+						</a>
+					</li>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="story.html" class="appearance-none">
+							STORY
+						</a>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="fomo stone.html" class="appearance-none">
+							FOMO STONE
+						</a>
+					</li>
+					<li 
+					class="text-white text-center text-[14px] hover:text-yellow-300">
+						<a href="team.html" class="appearance-none">
+							TEAM
+						</a>
+					</li>
+					<li>
+						<ul class="flex flex-row space-x-4 w-40 justify-center items-center">
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/discord.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/twitter.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/instagram.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="appearance-none">
+									<img src="./image/facebook.svg" class="w-4 h-4 hover:opacity-70">
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<div 
+			class="absolute right-5 top-5 z-30">
+					<button 
+					type="button" 
+					@click="isOpen = false">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+			</div>
+			
+		</section>
+
+		<nav 
+		class="max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-end items-center  pt-3 md:pt-12 px-2 md:px-0">
+			<ul 
+			class="hidden md:flex flex-row space-x-10 mr-14 z-20">
+				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<a href="index.html" class="appearance-none">HOME</a>
+				</li>
+				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<a href="story.html" class="appearance-none">STORY</a>
+				</li>
+				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<a href="fomo-stone.html" class="appearance-none">FOMO STONE</a>
+				</li>
+				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<a href="#" class="appearance-none">ROAD MAP</a>
+				</li>
+				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<a href="team.html" class="appearance-none">TEAM</a>
+				</li>
+			</ul>
+
+			<ul 
+			class="hidden md:flex flex-row space-x-10 z-20">
+				<li>
+					<a href="#" class="appearance-none">
+						<img src="./image/discord.svg" class="h-4 w-4 hover:opacity-70">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="appearance-none">
+						<img src="./image/twitter.svg" class="h-4 w-4 hover:opacity-70">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="appearance-none">
+						<img src="./image/facebook.svg" class="h-4 w-4 hover:opacity-70">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="appearance-none">
+						<img src="./image/instagram.svg" class="h-4 w-4 hover:opacity-70">
+					</a>
+				</li>
+			</ul>
+
+			<div 
+			class="flex md:hidden justify-center items-center">
+				<button 
+				type="button" 
+				@click="isOpen = true">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+		</nav>
+
+		<div 
+		class="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center">
+			<div class="relative w-full md:w-1/2">
+				<img src="./image/madmanga-logo.png" class="w-[360px] md:w-[460px] mx-auto">
+				<h5 
+				class="text-[32px] text-white text-center tracking-[1.25px] font-RobotoBold -mt-14 pb-2">THE LARGEST</h5>
+<!-- 				<h5 
+				class="text-5xl text-white text-center tracking-[1.25px] font-AntonRegular">MANGA-FOCUSED</h5>
+				<h5 
+				class="text-7xl text-white text-center tracking-[3px] font-AntonRegular">INCUBATOR</h5> -->
+				<h5 
+				class="text-5xl text-white text-center tracking-[1.25px] font-AntonRegular" 
+				style="animation: neon1 5s infinite;">MANGA-FOCUSED</h5>
+				<h5 
+				class="text-7xl text-white text-center tracking-[3px] font-AntonRegular" 
+				style="animation: neon1 5s infinite;">INCUBATOR</h5>
+
+				<div class="w-12 h-0.5 bg-white mx-auto my-2 md:my-3"></div>
+				<h5 
+				class="text-sm text-white text-[16px] text-center tracking-[1.25px] font-RobotoBold">FOR CREATOR & STORYTELLER</h5>
+				<h5 
+				class="text-sm text-white text-[16px] text-center tracking-[1.25px] font-RobotoBold pb-1">ON THE BLOCKCHAIN</h5>
+			</div>
+			<div class="w-full lg:w-1/2 relative w-[420px] h-[260px] md:h-[520px] mx-auto">
+				<div 
+				class="absolute inset-0 top-0 md:top-20 z-10">
+					<img src="./image/threeforegg.png" class="w-[260px] md:w-[420px] mx-auto md:mx-0">
+				</div>
+			</div>
+		</div>
+
+		<footer 
+		class="fixed bottom-0 w-screen bg-black h-10 flex items-center z-10">
+			<div 
+			class="max-w-7xl w-full mx-auto flex flex-row justify-between md:justify-end items-center px-2 md:px-0">
+				<span 
+				class="text-[12px] lg:text-[14px] font-RobotoRegular text-white">Copyright MadManga all rights reserved 2022</span>
+				<ul 
+				class="flex md:hidden flex-row space-x-4 z-20">
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/discord.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/twitter.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/facebook.svg" class="h-4 w-4">
+						</a>
+					</li>
+					<li>
+						<a href="#" class="appearance-none">
+							<img src="./image/instagram.svg" class="h-4 w-4">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</section>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
