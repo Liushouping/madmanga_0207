@@ -34,7 +34,7 @@
 </head>
 <body x-data="{ isOpen: false }">
 	<section 
-	class="w-screen h-full md:h-screen bg-cover bg-center relative flex flex-col justify-center" 
+	class="w-screen h-full sm:h-screen bg-cover bg-center relative flex flex-col justify-center" 
 	style="background-image: url(./image/home.png);">
 		<div 
 		class="absolute top-0 left-0 z-10">
@@ -116,7 +116,7 @@
 		</section>
 
 		<nav 
-		class="absolute top-10 max-w-7xl w-full mx-auto flex flex-row justify-center md:justify-end items-center px-2 md:px-0">
+		class="absolute top-10 max-w-7xl w-full mx-auto flex flex-row justify-center lg:justify-end items-center px-2 md:px-0">
 			<ul 
 			class="hidden md:flex flex-row space-x-10 mr-14 z-20">
 				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
@@ -137,7 +137,7 @@
 			</ul>
 
 			<ul 
-			class="hidden md:flex flex-row space-x-10 z-20">
+			class="hidden lg:flex flex-row space-x-10 z-20">
 				<li>
 					<a href="#" class="appearance-none">
 						<img src="./image/discord.svg" class="h-4 w-4 hover:opacity-70">
@@ -173,15 +173,11 @@
 		</nav>
 
 		<div 
-		class="max-w-7xl w-full mx-auto flex flex-col md:flex-row">
-			<div class="relative w-full md:w-1/2">
+		class="max-w-7xl w-full mx-auto flex flex-col lg:flex-row z-20">
+			<div class="relative w-full md:w-1/2 mx-auto">
 				<img src="./image/madmanga-logo.png" class="w-[360px] md:w-[460px] mx-auto z-10">
 				<h5 
 				class="text-[32px] text-white text-center tracking-[1.25px] font-RobotoBold -mt-14 pb-2">THE LARGEST</h5>
-<!-- 				<h5 
-				class="text-5xl text-white text-center tracking-[1.25px] font-AntonRegular">MANGA-FOCUSED</h5>
-				<h5 
-				class="text-7xl text-white text-center tracking-[3px] font-AntonRegular">INCUBATOR</h5> -->
 				<h5 
 				class="text-5xl text-white text-center tracking-[1.25px] font-AntonRegular" 
 				style="animation: neon1 5s infinite;">MANGA-FOCUSED</h5>
@@ -189,16 +185,16 @@
 				class="text-7xl text-white text-center tracking-[3px] font-AntonRegular" 
 				style="animation: neon1 5s infinite;">INCUBATOR</h5>
 
-				<div class="w-12 h-0.5 bg-white mx-auto my-2 md:my-3"></div>
+				<div class="w-12 h-0.5 bg-white mx-auto my-2 md:my-6"></div>
 				<h5 
 				class="text-sm text-white text-[16px] text-center tracking-[1.25px] font-RobotoBold">FOR CREATOR & STORYTELLER</h5>
 				<h5 
 				class="text-sm text-white text-[16px] text-center tracking-[1.25px] font-RobotoBold pb-1">ON THE BLOCKCHAIN</h5>
 			</div>
-			<div class="w-full lg:w-1/2 relative w-[420px] h-[260px] md:h-[520px] mx-auto">
+			<div class="w-full lg:w-1/2 relative w-[420px] h-[260px] md:h-[320px] lg:h-[520px] mx-auto">
 				<div 
-				class="absolute inset-0 top-0 md:top-20 z-10">
-					<img src="./image/threeforegg.png" class="w-[260px] md:w-[420px] mx-auto md:mx-0">
+				class="absolute inset-0 top-0 lg:top-20 z-10">
+					<img src="./image/threeforegg.png" class="w-[260px] md:w-[320px] lg:w-[520px] mx-auto lg:mx-0">
 				</div>
 			</div>
 		</div>

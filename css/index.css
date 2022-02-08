@@ -42,7 +42,7 @@
   src: url(../font/Roboto-Light.ttf) format("opentype");
 }
 /* */
-@keyframes neon1 {
+/*@keyframes neon1 {
   0% {
     text-shadow:
       0 0 0px #ff1177;
@@ -51,7 +51,7 @@
     text-shadow:
       0 0 35px #ff1177;
   }
-}
+}*/
 /* */
 .wrapper {
   width: 100%;
