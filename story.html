@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./image/MM_Favi.png" type="image/png"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <title>story</title>
+  <title>STORY | MadManga</title>
 
   <script>
   tailwind.config = {
@@ -18,7 +19,9 @@
 		      'xl': '1920px',
 		    },
         extend: {
-        	
+        	colors: {
+            deeporange: '#FD6D03'
+	        }
       	},
       	fontFamily: {
 	        AntonRegular: ['Anton Regular'],
@@ -63,7 +66,7 @@
 
 		<section 
 		:class="isOpen ? 'fixed top-0 z-50' : 'hidden'" 
-		class="w-screen h-screen bg-gray-900">
+		class="w-screen h-screen bg-deeporange">
 			<div 
 			class="flex justify-center items-center h-screen">
 				<ul 
@@ -75,7 +78,7 @@
 						</a>
 					</li>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] text-yellow-300 hover:text-yellow-300">
 						<a href="story.html" class="appearance-none">
 							STORY
 						</a>
@@ -140,7 +143,7 @@
 					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
 						<a href="index.html" class="appearance-none">HOME</a>
 					</li>
-					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold text-yellow-300 hover:text-yellow-300">
 						<a href="story.html" class="appearance-none">STORY</a>
 					</li>
 					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
