@@ -6,6 +6,7 @@
   <link rel="icon" href="./image/MM_Favi.png" type="image/png"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
   <title>STORY | MadManga</title>
 
   <script>
@@ -20,7 +21,7 @@
 		    },
         extend: {
         	colors: {
-            deeporange: '#FD6D03'
+            deepyellow: '#6436C4'
 	        }
       	},
       	fontFamily: {
@@ -55,7 +56,7 @@
 		</button>
 	</div>
 	<section 
-	class="relative w-screen h-full sm:h-screen bg-black flex flex-col justify-center items-center overflow-hidden">
+	class="relative w-screen h-full xs:h-screen bg-black flex flex-col justify-center items-center overflow-hidden">
 		<div 
 		class="absolute inset-0 flex justify-center items-center">
 			<video 
@@ -66,30 +67,30 @@
 
 		<section 
 		:class="isOpen ? 'fixed top-0 z-50' : 'hidden'" 
-		class="w-screen h-screen bg-deeporange">
+		class="w-screen h-screen bg-deepyellow">
 			<div 
 			class="flex justify-center items-center h-screen">
 				<ul 
 				class="space-y-6">
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="index.html" class="appearance-none">
 							HOME
 						</a>
 					</li>
 					<li 
-					class="text-white text-center text-[14px] text-yellow-300 hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold text-deepyellow hover:text-deepyellow">
 						<a href="story.html" class="appearance-none">
 							STORY
 						</a>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="fomo-stone.html" class="appearance-none">
 							FOMO STONE
 						</a>
 					</li>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="team.html" class="appearance-none">
 							TEAM
 						</a>
@@ -109,11 +110,6 @@
 							<li>
 								<a href="#" class="appearance-none">
 									<img src="./image/instagram.svg" class="w-4 h-4 hover:opacity-70">
-								</a>
-							</li>
-							<li>
-								<a href="#" class="appearance-none">
-									<img src="./image/facebook.svg" class="w-4 h-4 hover:opacity-70">
 								</a>
 							</li>
 						</ul>
@@ -140,19 +136,19 @@
 			<div class="hidden md:flex flex-row justify-end items-center space-x-10 md:px-20 lg:px-0">
 				<ul 
 				class="flex flex-row space-x-10 z-20">
-					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="index.html" class="appearance-none">HOME</a>
 					</li>
-					<li class="text-white text-[14px] font-RobotoBold text-yellow-300 hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold text-deepyellow hover:text-deepyellow">
 						<a href="story.html" class="appearance-none">STORY</a>
 					</li>
-					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="fomo-stone.html" class="appearance-none">FOMO STONE</a>
 					</li>
-					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="#" class="appearance-none">ROAD MAP</a>
 					</li>
-					<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+					<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="team.html" class="appearance-none">TEAM</a>
 					</li>
 				</ul>
@@ -167,11 +163,6 @@
 					<li>
 						<a href="#" class="appearance-none">
 							<img src="./image/twitter.svg" class="h-4 w-4 hover:opacity-70">
-						</a>
-					</li>
-					<li>
-						<a href="#" class="appearance-none">
-							<img src="./image/facebook.svg" class="h-4 w-4 hover:opacity-70">
 						</a>
 					</li>
 					<li>
@@ -200,9 +191,9 @@
 				<h1 class="glitch text-left text-[36px] -ml-8 font-MajestyRegular">Origin</h1>
 			</div>
 			<p class="text-white text-[16px] leading-loose tracking-[1.25px] font-RobotoBold pb-6 md:pb-3">
-				A massive black hole of unknown origin suddenly appeared at the edge of the solar system and seemed to attract only and all manga-related energy available on Earth.
+				<span id="typed"></span>
 			</p>
-			<p class="text-white text-[16px] leading-loose tracking-[1.25px] font-RobotoBold pb-6 md:pb-3">
+<!-- 			<p class="text-white text-[16px] leading-loose tracking-[1.25px] font-RobotoBold pb-6 md:pb-3">
 				Unbearable anxiety arose as familiar manga characters and stories were transformed into splendid aurora rays devoured by the black hole.
 			</p>
 			<p class="text-white text-[20px] leading-loose tracking-[1.25px] font-RobotoBold pb-6 md:pb-3">
@@ -213,7 +204,7 @@
 			</p>
 			<p class="text-white text-[16px] leading-loose tracking-[1.25px] font-RobotoBold">
 				Is it the birth of an evil conspiracy? Or a new adventure about to unfold?
-			</p>
+			</p> -->
 		</div>
 
 		<footer 
@@ -236,11 +227,6 @@
 					</li>
 					<li>
 						<a href="#" class="appearance-none">
-							<img src="./image/facebook.svg" class="h-4 w-4">
-						</a>
-					</li>
-					<li>
-						<a href="#" class="appearance-none">
 							<img src="./image/instagram.svg" class="h-4 w-4">
 						</a>
 					</li>
@@ -254,6 +240,13 @@
 		const t = setTimeout(function(){
 	    $('.loader-story').fadeToggle("slow","linear");
 	  },17000);
+
+		const typed = new Typed('#typed',{
+		  strings: ['A massive black hole of unknown origin suddenly appeared at the edge of the solar system and seemed to attract only and all manga-related energy available on Earth. <p class="">Unbearable anxiety arose as familiar manga characters and stories were transformed into splendid aurora rays devoured by the black hole.</p> <p class="">Wait. What...is...THAT?!</p> <p class="">The energy, on its way to the black hole, was captured by a flaming planet, followed by FOMO stones emerging from the surface of the star one after another.</p><p class="py-3">Is it the birth of an evil conspiracy? Or a new adventure about to unfold?</p>'],
+		  typeSpeed : 40,
+		  delaySpeed : 90,
+		});
+
 
 		function skip() {
 	    $(".loader-story").remove();

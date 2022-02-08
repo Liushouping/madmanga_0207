@@ -20,7 +20,7 @@
 		    },
         extend: {
         	colors: {
-            deeporange: '#FD6D03'
+            deepyellow: '#6436C4'
 	        }
       	},
       	fontFamily: {
@@ -37,7 +37,7 @@
 </head>
 <body x-data="{ isOpen: false }">
 	<section 
-	class="w-screen h-full sm:h-screen bg-cover bg-center relative flex flex-col justify-center" 
+	class="w-screen h-screen bg-cover bg-center relative flex flex-col justify-center" 
 	style="background-image: url(./image/home.png);">
 		<div 
 		class="absolute top-0 left-0 z-10">
@@ -54,30 +54,30 @@
 
 		<section 
 		:class="isOpen ? 'fixed top-0 z-50' : 'hidden'" 
-		class="w-screen h-screen bg-deeporange">
+		class="w-screen h-screen bg-deepyellow">
 			<div 
 			class="flex justify-center items-center h-screen">
 				<ul 
 				class="space-y-6">
 					<li 
-					class="text-white text-center text-[14px] text-yellow-300 hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold text-deepyellow hover:text-deepyellow">
 						<a href="index.html" class="appearance-none">
 							HOME
 						</a>
 					</li>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="story.html" class="appearance-none">
 							STORY
 						</a>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="fomo-stone.html" class="appearance-none">
 							FOMO STONE
 						</a>
 					</li>
 					<li 
-					class="text-white text-center text-[14px] hover:text-yellow-300">
+					class="text-white text-center text-[14px] font-RobotoBold hover:text-deepyellow">
 						<a href="team.html" class="appearance-none">
 							TEAM
 						</a>
@@ -97,11 +97,6 @@
 							<li>
 								<a href="#" class="appearance-none">
 									<img src="./image/instagram.svg" class="w-4 h-4 hover:opacity-70">
-								</a>
-							</li>
-							<li>
-								<a href="#" class="appearance-none">
-									<img src="./image/facebook.svg" class="w-4 h-4 hover:opacity-70">
 								</a>
 							</li>
 						</ul>
@@ -126,19 +121,19 @@
 		class="absolute top-5 sm:top-10 max-w-7xl w-full mx-auto flex flex-row justify-center lg:justify-end items-center px-2 md:px-0">
 			<ul 
 			class="hidden md:flex flex-row space-x-10 mr-14 z-30">
-				<li class="text-white text-[14px] font-RobotoBold text-yellow-300 hover:text-yellow-300">
+				<li class="text-white text-[14px] font-RobotoBold text-deepyellow hover:text-deepyellow">
 					<a href="index.html" class="appearance-none">HOME</a>
 				</li>
-				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+				<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 					<a href="story.html" class="appearance-none">STORY</a>
 				</li>
-				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+				<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 					<a href="fomo-stone.html" class="appearance-none">FOMO STONE</a>
 				</li>
-				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+				<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 					<a href="#" class="appearance-none">ROAD MAP</a>
 				</li>
-				<li class="text-white text-[14px] font-RobotoBold hover:text-yellow-300">
+				<li class="text-white text-[14px] font-RobotoBold hover:text-deepyellow">
 					<a href="team.html" class="appearance-none">TEAM</a>
 				</li>
 			</ul>
@@ -153,11 +148,6 @@
 				<li>
 					<a href="#" class="appearance-none">
 						<img src="./image/twitter.svg" class="h-4 w-4 hover:opacity-70">
-					</a>
-				</li>
-				<li>
-					<a href="#" class="appearance-none">
-						<img src="./image/facebook.svg" class="h-4 w-4 hover:opacity-70">
 					</a>
 				</li>
 				<li>
@@ -183,7 +173,7 @@
 		class="max-w-7xl w-full mx-auto flex flex-col lg:flex-row z-20">
 			<div class="relative w-full md:w-1/2 mx-auto">
 				<img src="./image/madmanga-logo.png" 
-				class="w-[360px] md:w-[460px] mx-auto z-10" 
+				class="w-[360px] md:w-[380px] lg:w-[420px] mx-auto z-10" 
 				style="animation: 2s ease 0s infinite normal none running letter;">
 				<h5 
 				class="text-[32px] text-white text-center tracking-[1.25px] font-RobotoBold -mt-14 pb-2">THE LARGEST</h5>
@@ -202,8 +192,16 @@
 			</div>
 			<div class="w-full lg:w-1/2 relative w-[360px] h-[260px] md:h-[320px] lg:h-[520px] mx-auto">
 				<div 
-				class="absolute inset-0 top-0 lg:top-20 z-10">
-					<img src="./image/threeforegg.png" class="w-[260px] md:w-[320px] lg:w-[520px] mx-auto lg:mx-0" style="animation: switch 811ms linear 266ms infinite alternate">
+				class="absolute xs:left-2 md:left-0 lg:left-20 top-10 lg:top-40 z-10">
+					<img src="./image/blue_egg.png" class="w-[160px] md:w-[210px]" style="animation: switch 811ms linear 326ms infinite alternate">
+				</div>
+				<div 
+				class="absolute xs:left-20 md:left-16 lg:left-48 -top-5 lg:top-20 z-20">
+					<img src="./image/red_egg.png" class="w-[190px] md:w-[240px]" style="animation: switch 811ms linear 406ms infinite alternate">
+				</div>
+				<div 
+				class="absolute xs:right-2 md:-right-10 lg:right-20 top-10 lg:top-40 z-10">
+					<img src="./image/gold_egg.png" class="w-[160px] md:w-[210px]" style="animation: switch 811ms linear 106ms infinite alternate">
 				</div>
 			</div>
 		</div>
@@ -224,11 +222,6 @@
 					<li>
 						<a href="#" class="appearance-none">
 							<img src="./image/twitter.svg" class="h-4 w-4">
-						</a>
-					</li>
-					<li>
-						<a href="#" class="appearance-none">
-							<img src="./image/facebook.svg" class="h-4 w-4">
 						</a>
 					</li>
 					<li>
