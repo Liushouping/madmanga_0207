@@ -386,6 +386,6 @@
   }
 }
 
-.scrollbar::-webkit-scrollbar {
-    display:none;
-}
+/*.scrollbar::-webkit-scrollbar {
+    display: none;
+}*/
