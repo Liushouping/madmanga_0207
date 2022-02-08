@@ -52,6 +52,15 @@
       0 0 35px #ff1177;
   }
 }
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  to {
+    text-shadow:
+      0 0 35px #ff1177, 0 0 40px #ff1177;
+  }
+}
 @keyframes neon2{
   0%{filter:drop-shadow(0 0 10px #ff1177) drop-shadow(0 0 20px #ff1177) ;opacity:.85}
   45%{filter:drop-shadow(0 0 20px #ff1177) drop-shadow(0 0 20px #ff1177) ;opacity:.85}
